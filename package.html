@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Package Details | Safarnama</title>
+    <meta name="description" content="Itinerary, inclusions and price for this Safarnama holiday package.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container nav">
+            <a href="index.html" class="logo">Safar<span>nama</span></a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="destinations.html">Destinations</a>
+                <a href="packages.html" class="active">Packages</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="contact.html#enquiry" class="btn btn-small">Book Now</a>
+            </nav>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Banner (filled in by script.js from data.js) -->
+    <section class="detail-hero" id="detailHero">
+        <div class="container" id="detailHeroContent"></div>
+    </section>
+
+    <!-- Details -->
+    <section class="section" id="packageDetail">
+        <div class="container detail-layout">
+            <div id="detailMain"></div>
+            <aside id="detailAside"></aside>
+        </div>
+    </section>
+
+    <!-- Shown when the id in the URL doesn't match a package -->
+    <section class="section" id="notFound" hidden>
+        <div class="container empty-state">
+            <h3>We couldn't find that package</h3>
+            <p>It may have been removed, or the link is incorrect.</p>
+            <a href="packages.html" class="btn">Browse All Packages</a>
+        </div>
+    </section>
+
+    <!-- Similar packages -->
+    <section class="section section-alt" id="similarSection">
+        <div class="container">
+            <div class="section-head">
+                <p class="eyebrow">You may also like</p>
+                <h2>Similar packages</h2>
+            </div>
+            <div class="package-grid" id="similarList"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <a href="index.html" class="logo">Safar<span>nama</span></a>
+                <p>Making every journey memorable since 2015.</p>
+            </div>
+            <div>
+                <h4>Company</h4>
+                <a href="about.html">About Us</a>
+                <a href="destinations.html">Destinations</a>
+                <a href="packages.html">Packages</a>
+                <a href="gallery.html">Gallery</a>
+            </div>
+            <div>
+                <h4>Support</h4>
+                <a href="contact.html">Contact Us</a>
+                <a href="contact.html#faq">FAQs</a>
+                <a href="contact.html#enquiry">Book a Trip</a>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <a href="tel:+919876543210">+91 98765 43210</a>
+                <a href="mailto:hello@safarnama.example">hello@safarnama.example</a>
+                <span>Jaipur, Rajasthan, India</span>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; <span id="year"></span> Safarnama. All rights reserved.</p>
+            <p class="footer-legal"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms &amp; Conditions</a></p>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

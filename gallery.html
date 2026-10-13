@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Safarnama</title>
+    <meta name="description" content="Photos from Safarnama destinations across India and abroad.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container nav">
+            <a href="index.html" class="logo">Safar<span>nama</span></a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="destinations.html">Destinations</a>
+                <a href="packages.html">Packages</a>
+                <a href="gallery.html" class="active">Gallery</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="contact.html#enquiry" class="btn btn-small">Book Now</a>
+            </nav>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page banner -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Gallery</h1>
+            <p class="breadcrumb"><a href="index.html">Home</a> / Gallery</p>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="section">
+        <div class="container">
+            <div class="section-head">
+                <p class="eyebrow">Moments</p>
+                <h2>Places we take you</h2>
+                <p>Click any photo to view it larger.</p>
+            </div>
+
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="beach">Beach</button>
+                <button class="filter-btn" data-filter="mountains">Mountains</button>
+                <button class="filter-btn" data-filter="heritage">Heritage</button>
+                <button class="filter-btn" data-filter="city">City</button>
+            </div>
+
+            <!-- Each link points at the large photo; script.js opens it in a lightbox -->
+            <div class="gallery-grid" id="filterList">
+                <a class="gallery-item wide" data-tags="beach" data-caption="Sunset on the shore" href="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=75" alt="Waves on a beach at sunset" loading="lazy">
+                    <span class="gallery-caption">Sunset on the shore</span>
+                </a>
+                <a class="gallery-item tall" data-tags="heritage" data-caption="Taj Mahal, Agra" href="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=1600&q=80">
+                    <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=700&q=75" alt="The Taj Mahal and its reflecting pool" loading="lazy">
+                    <span class="gallery-caption">Taj Mahal, Agra</span>
+                </a>
+                <a class="gallery-item" data-tags="beach" data-caption="Alleppey backwaters, Kerala" href="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1600&q=80">
+                    <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=700&q=75" alt="Houseboat on the Kerala backwaters" loading="lazy">
+                    <span class="gallery-caption">Alleppey backwaters, Kerala</span>
+                </a>
+                <a class="gallery-item" data-tags="mountains" data-caption="On the road in Ladakh" href="https://images.unsplash.com/photo-1581793745862-99fde7fa73d2?auto=format&fit=crop&w=1600&q=80">
+                    <img src="https://images.unsplash.com/photo-1581793745862-99fde7fa73d2?auto=format&fit=crop&w=700&q=75" alt="Motorbike on a mountain road in Ladakh" loading="lazy">
+                    <span class="gallery-caption">On the road in Ladakh</span>
+                </a>
+                <a class="gallery-item" data-tags="beach" data-caption="Water villas, Maldives" href="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=1600&q=80">
+                    <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=700&q=75" alt="Overwater villas in a turquoise lagoon" loading="lazy">
+                    <span class="gallery-caption">Water villas, Maldives</span>
+                </a>
+                <a class="gallery-item tall" data-tags="city" data-caption="Dubai skyline" href="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1600&q=80">
+                    <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=700&q=75" alt="Dubai skyline at dusk" loading="lazy">
+                    <span class="gallery-caption">Dubai skyline</span>
+                </a>
+                <a class="gallery-item wide" data-tags="mountains" data-caption="Above the clouds, Himalayas" href="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1600&q=80">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1000&q=75" alt="Mountain peaks above a sea of clouds" loading="lazy">
+                    <span class="gallery-caption">Above the clouds, Himalayas</span>
+                </a>
+                <a class="gallery-item" data-tags="city heritage" data-caption="Eiffel Tower, Paris" href="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1600&q=80">
+                    <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=700&q=75" alt="The Eiffel Tower beside the Seine" loading="lazy">
+                    <span class="gallery-caption">Eiffel Tower, Paris</span>
+                </a>
+                <a class="gallery-item" data-tags="heritage" data-caption="Hawa Mahal, Jaipur" href="https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=1600&q=80">
+                    <img src="https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=700&q=75" alt="Hawa Mahal in Jaipur" loading="lazy">
+                    <span class="gallery-caption">Hawa Mahal, Jaipur</span>
+                </a>
+                <a class="gallery-item" data-tags="heritage" data-caption="Lake temple, Bali" href="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1600&q=80">
+                    <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=700&q=75" alt="Temple on a lake in Bali" loading="lazy">
+                    <span class="gallery-caption">Lake temple, Bali</span>
+                </a>
+                <a class="gallery-item tall" data-tags="mountains" data-caption="Alpine lake" href="https://images.unsplash.com/photo-1506038634487-60a69ae4b7b1?auto=format&fit=crop&w=1600&q=80">
+                    <img src="https://images.unsplash.com/photo-1506038634487-60a69ae4b7b1?auto=format&fit=crop&w=700&q=75" alt="Clear lake below rocky mountain peaks" loading="lazy">
+                    <span class="gallery-caption">Alpine lake</span>
+                </a>
+                <a class="gallery-item" data-tags="beach" data-caption="Goa coastline" href="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1600&q=80">
+                    <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=700&q=75" alt="Palm-lined beach in Goa" loading="lazy">
+                    <span class="gallery-caption">Goa coastline</span>
+                </a>
+                <a class="gallery-item" data-tags="city" data-caption="Marina Bay, Singapore" href="https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1600&q=80">
+                    <img src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=700&q=75" alt="Marina Bay Sands in Singapore" loading="lazy">
+                    <span class="gallery-caption">Marina Bay, Singapore</span>
+                </a>
+                <a class="gallery-item" data-tags="heritage" data-caption="Temple courtyard, Thailand" href="https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=1600&q=80">
+                    <img src="https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=700&q=75" alt="Golden temple buildings in Thailand" loading="lazy">
+                    <span class="gallery-caption">Temple courtyard, Thailand</span>
+                </a>
+                <a class="gallery-item wide" data-tags="mountains" data-caption="Morning on the lake" href="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1600&q=80">
+                    <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1000&q=75" alt="Boat on a mountain lake" loading="lazy">
+                    <span class="gallery-caption">Morning on the lake</span>
+                </a>
+            </div>
+
+            <div class="empty-state" id="emptyState" hidden>
+                <h3>No photos found</h3>
+                <p>Try a different filter.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="container cta-inner">
+            <div>
+                <h2>Want to see these places yourself?</h2>
+                <p>Pick a package and we'll take care of the rest.</p>
+            </div>
+            <div class="section-more"><a href="packages.html" class="btn btn-light">Explore Packages</a></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <a href="index.html" class="logo">Safar<span>nama</span></a>
+                <p>Making every journey memorable since 2015.</p>
+            </div>
+            <div>
+                <h4>Company</h4>
+                <a href="about.html">About Us</a>
+                <a href="destinations.html">Destinations</a>
+                <a href="packages.html">Packages</a>
+                <a href="gallery.html">Gallery</a>
+            </div>
+            <div>
+                <h4>Support</h4>
+                <a href="contact.html">Contact Us</a>
+                <a href="contact.html#faq">FAQs</a>
+                <a href="contact.html#enquiry">Book a Trip</a>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <a href="tel:+919876543210">+91 98765 43210</a>
+                <a href="mailto:hello@safarnama.example">hello@safarnama.example</a>
+                <span>Jaipur, Rajasthan, India</span>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; <span id="year"></span> Safarnama. All rights reserved.</p>
+            <p class="footer-legal"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms &amp; Conditions</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

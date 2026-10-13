@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact &amp; Booking | Safarnama</title>
+    <meta name="description" content="Send a booking enquiry or get in touch with the Safarnama team.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container nav">
+            <a href="index.html" class="logo">Safar<span>nama</span></a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="destinations.html">Destinations</a>
+                <a href="packages.html">Packages</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="about.html">About</a>
+                <a href="contact.html" class="active">Contact</a>
+                <a href="contact.html#enquiry" class="btn btn-small">Book Now</a>
+            </nav>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page banner -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Contact &amp; Booking</h1>
+            <p class="breadcrumb"><a href="index.html">Home</a> / Contact</p>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="enquiry">
+        <div class="container contact-grid">
+            <aside class="contact-info">
+                <h2>Let's talk</h2>
+                <p>Our travel experts reply within 24 hours.</p>
+
+                <div class="contact-item">
+                    <h4>Call us</h4>
+                    <a href="tel:+919876543210">+91 98765 43210</a>
+                    <span>Mon - Sat, 9am to 8pm</span>
+                </div>
+                <div class="contact-item">
+                    <h4>Email</h4>
+                    <a href="mailto:hello@safarnama.example">hello@safarnama.example</a>
+                </div>
+                <div class="contact-item">
+                    <h4>Office</h4>
+                    <span>21, MI Road, Jaipur</span>
+                    <span>Rajasthan 302001, India</span>
+                </div>
+            </aside>
+
+            <div class="form-card">
+                <h2>Booking enquiry</h2>
+                <p>Fill in your details and we'll send you the best quote.</p>
+
+                <form id="enquiryForm">
+                    <div class="form-grid">
+                        <div class="field">
+                            <label for="name">Full name</label>
+                            <input type="text" id="name" placeholder="Your name" required>
+                        </div>
+                        <div class="field">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="you@example.com" required>
+                        </div>
+                        <div class="field">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" placeholder="+91 98765 43210" required>
+                        </div>
+                        <div class="field">
+                            <label for="package">Package</label>
+                            <select id="package" required>
+                                <option value="">Select a package</option>
+                                <option>Kerala Backwaters Escape</option>
+                                <option>Ladakh Road Adventure</option>
+                                <option>Maldives Island Retreat</option>
+                                <option>Goa Beach Holiday</option>
+                                <option>Manali Snow Getaway</option>
+                                <option>Golden Triangle Tour</option>
+                                <option>Paris Romantic Week</option>
+                                <option>Bali Island Explorer</option>
+                                <option>Dubai Family Fun</option>
+                                <option>Custom Trip</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="travelDate">Travel date</label>
+                            <input type="date" id="travelDate" required>
+                        </div>
+                        <div class="field">
+                            <label for="travellers">Travellers</label>
+                            <input type="number" id="travellers" min="1" max="50" value="2" required>
+                        </div>
+                        <div class="field full">
+                            <label for="message">Message (optional)</label>
+                            <textarea id="message" placeholder="Tell us about your budget, hotel preference or anything else"></textarea>
+                        </div>
+                        <div class="full">
+                            <button type="submit" class="btn">Send Enquiry</button>
+                        </div>
+                        <p class="form-message full" id="formMessage" role="status"></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-alt" id="faq">
+        <div class="container">
+            <div class="section-head">
+                <p class="eyebrow">FAQs</p>
+                <h2>Frequently asked questions</h2>
+            </div>
+
+            <div class="faq-list">
+                <details open>
+                    <summary>How do I book a package?</summary>
+                    <p>Send an enquiry using the form above or call us. Our trip manager will share a final quote and you can confirm by paying a 25% advance.</p>
+                </details>
+                <details>
+                    <summary>Can I customise a package?</summary>
+                    <p>Yes. You can change hotels, add or remove days and include extra activities. Choose "Custom Trip" in the form and tell us what you need.</p>
+                </details>
+                <details>
+                    <summary>What is the cancellation policy?</summary>
+                    <p>Cancellations made 15 or more days before travel get a full refund minus a small processing fee. Later cancellations are charged based on hotel and flight policies.</p>
+                </details>
+                <details>
+                    <summary>Are flights included in the price?</summary>
+                    <p>International packages include flights where mentioned. For domestic packages, flights or trains can be added on request.</p>
+                </details>
+                <details>
+                    <summary>Do you help with visas?</summary>
+                    <p>Yes, we assist with visa documentation and applications for all our international packages.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <a href="index.html" class="logo">Safar<span>nama</span></a>
+                <p>Making every journey memorable since 2015.</p>
+            </div>
+            <div>
+                <h4>Company</h4>
+                <a href="about.html">About Us</a>
+                <a href="destinations.html">Destinations</a>
+                <a href="packages.html">Packages</a>
+                <a href="gallery.html">Gallery</a>
+            </div>
+            <div>
+                <h4>Support</h4>
+                <a href="contact.html">Contact Us</a>
+                <a href="contact.html#faq">FAQs</a>
+                <a href="contact.html#enquiry">Book a Trip</a>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <a href="tel:+919876543210">+91 98765 43210</a>
+                <a href="mailto:hello@safarnama.example">hello@safarnama.example</a>
+                <span>Jaipur, Rajasthan, India</span>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; <span id="year"></span> Safarnama. All rights reserved.</p>
+            <p class="footer-legal"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms &amp; Conditions</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

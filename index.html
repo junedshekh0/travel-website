@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safarnama | Explore the World</title>
+    <meta name="description" content="Safarnama - handpicked holiday packages, flights and hotels at the best prices.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container nav">
+            <a href="index.html" class="logo">Safar<span>nama</span></a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html" class="active">Home</a>
+                <a href="destinations.html">Destinations</a>
+                <a href="packages.html">Packages</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="contact.html#enquiry" class="btn btn-small">Book Now</a>
+            </nav>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <p class="hero-tag">Your journey starts here</p>
+            <h1>Discover places you'll<br>never forget</h1>
+            <p class="hero-text">Handpicked holiday packages, comfortable stays and local experiences &mdash; all at honest prices.</p>
+
+            <form class="search-box" id="searchForm">
+                <div class="field">
+                    <label for="destination">Destination</label>
+                    <input type="text" id="destination" placeholder="Where to?" required>
+                </div>
+                <div class="field">
+                    <label for="checkin">Check in</label>
+                    <input type="date" id="checkin" required>
+                </div>
+                <div class="field">
+                    <label for="checkout">Check out</label>
+                    <input type="date" id="checkout" required>
+                </div>
+                <div class="field">
+                    <label for="guests">Guests</label>
+                    <select id="guests">
+                        <option>1 Guest</option>
+                        <option selected>2 Guests</option>
+                        <option>3 Guests</option>
+                        <option>4+ Guests</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn">Search</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats">
+        <div class="container stats-grid">
+            <div><strong>500+</strong><span>Destinations</span></div>
+            <div><strong>25K+</strong><span>Happy Travellers</span></div>
+            <div><strong>1,200+</strong><span>Tour Packages</span></div>
+            <div><strong>4.8/5</strong><span>Average Rating</span></div>
+        </div>
+    </section>
+
+    <!-- Destinations -->
+    <section class="section" id="destinations">
+        <div class="container">
+            <div class="section-head">
+                <p class="eyebrow">Top Picks</p>
+                <h2>Popular Destinations</h2>
+                <p>The places our travellers love the most this season.</p>
+            </div>
+
+            <div class="dest-grid">
+                <a href="packages.html?q=Goa" class="dest-card dest-goa">
+                    <div class="dest-info"><h3>Goa</h3><p>Beaches &amp; nightlife</p></div>
+                    <span class="dest-price">from ₹8,999</span>
+                </a>
+                <a href="packages.html?q=Manali" class="dest-card dest-manali">
+                    <div class="dest-info"><h3>Manali</h3><p>Mountains &amp; snow</p></div>
+                    <span class="dest-price">from ₹10,499</span>
+                </a>
+                <a href="packages.html?q=Agra" class="dest-card dest-agra">
+                    <div class="dest-info"><h3>Agra</h3><p>Heritage &amp; history</p></div>
+                    <span class="dest-price">from ₹5,999</span>
+                </a>
+                <a href="packages.html?q=Paris" class="dest-card dest-paris">
+                    <div class="dest-info"><h3>Paris</h3><p>Romance &amp; art</p></div>
+                    <span class="dest-price">from ₹89,999</span>
+                </a>
+                <a href="packages.html?q=Bali" class="dest-card dest-bali">
+                    <div class="dest-info"><h3>Bali</h3><p>Temples &amp; islands</p></div>
+                    <span class="dest-price">from ₹45,999</span>
+                </a>
+                <a href="packages.html?q=Dubai" class="dest-card dest-dubai">
+                    <div class="dest-info"><h3>Dubai</h3><p>Luxury &amp; shopping</p></div>
+                    <span class="dest-price">from ₹52,999</span>
+                </a>
+            </div>
+            <div class="section-more"><a href="destinations.html" class="btn btn-outline">View All Destinations</a></div>
+        </div>
+    </section>
+
+    <!-- Why us -->
+    <section class="section section-alt" id="why-us">
+        <div class="container">
+            <div class="section-head">
+                <p class="eyebrow">Why Safarnama</p>
+                <h2>Travel made simple</h2>
+                <p>We take care of the planning so you can enjoy the trip.</p>
+            </div>
+
+            <div class="feature-grid">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    </div>
+                    <h3>Best Price Guarantee</h3>
+                    <p>No hidden charges. Find it cheaper elsewhere and we'll match it.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                    </div>
+                    <h3>Safe &amp; Secure</h3>
+                    <p>Verified hotels, trusted partners and secure online payments.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1v-6h3zM3 19a2 2 0 0 0 2 2h1v-6H3z"/></svg>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Our travel experts are one call away, before and during your trip.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <h3>Custom Itineraries</h3>
+                    <p>Tell us what you like and we'll plan a trip that fits you.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages -->
+    <section class="section" id="packages">
+        <div class="container">
+            <div class="section-head">
+                <p class="eyebrow">Special Offers</p>
+                <h2>Trending Packages</h2>
+                <p>All-inclusive trips with stays, transfers and sightseeing.</p>
+            </div>
+
+            <!-- Cards are built by script.js from data.js -->
+            <div class="package-grid" data-packages="kerala,ladakh,maldives"></div>
+            <div class="section-more"><a href="packages.html" class="btn btn-outline">View All Packages</a></div>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="section section-alt" id="reviews">
+        <div class="container">
+            <div class="section-head">
+                <p class="eyebrow">Testimonials</p>
+                <h2>What our travellers say</h2>
+            </div>
+
+            <div class="review-grid">
+                <blockquote class="review">
+                    <div class="stars">★★★★★</div>
+                    <p>"Our Kerala trip was planned perfectly. The houseboat was the highlight and everything ran on time."</p>
+                    <footer><span class="avatar">PS</span><div><strong>Priya Sharma</strong><span>Mumbai</span></div></footer>
+                </blockquote>
+                <blockquote class="review">
+                    <div class="stars">★★★★★</div>
+                    <p>"Booked Ladakh with friends. Great hotels, a helpful driver and support that actually picked up the phone."</p>
+                    <footer><span class="avatar">RV</span><div><strong>Rahul Verma</strong><span>Delhi</span></div></footer>
+                </blockquote>
+                <blockquote class="review">
+                    <div class="stars">★★★★☆</div>
+                    <p>"Very good value for our Dubai family holiday. The itinerary was relaxed and kid-friendly."</p>
+                    <footer><span class="avatar">AK</span><div><strong>Anjali Kapoor</strong><span>Pune</span></div></footer>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="cta" id="newsletter">
+        <div class="container cta-inner">
+            <div>
+                <h2>Get travel deals in your inbox</h2>
+                <p>Subscribe for exclusive offers and trip ideas. No spam.</p>
+            </div>
+            <form class="cta-form" id="newsletterForm">
+                <input type="email" id="email" placeholder="Enter your email" aria-label="Email address" required>
+                <button type="submit" class="btn btn-light">Subscribe</button>
+            </form>
+            <p class="cta-message" id="newsletterMessage" role="status"></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <a href="index.html" class="logo">Safar<span>nama</span></a>
+                <p>Making every journey memorable since 2015.</p>
+            </div>
+            <div>
+                <h4>Company</h4>
+                <a href="about.html">About Us</a>
+                <a href="destinations.html">Destinations</a>
+                <a href="packages.html">Packages</a>
+                <a href="gallery.html">Gallery</a>
+            </div>
+            <div>
+                <h4>Support</h4>
+                <a href="contact.html">Contact Us</a>
+                <a href="contact.html#faq">FAQs</a>
+                <a href="contact.html#enquiry">Book a Trip</a>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <a href="tel:+919876543210">+91 98765 43210</a>
+                <a href="mailto:hello@safarnama.example">hello@safarnama.example</a>
+                <span>Jaipur, Rajasthan, India</span>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; <span id="year"></span> Safarnama. All rights reserved.</p>
+            <p class="footer-legal"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms &amp; Conditions</a></p>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

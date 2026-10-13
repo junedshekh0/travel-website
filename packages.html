@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Packages | Safarnama</title>
+    <meta name="description" content="All-inclusive holiday packages from Safarnama with stays, transfers and sightseeing.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container nav">
+            <a href="index.html" class="logo">Safar<span>nama</span></a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="destinations.html">Destinations</a>
+                <a href="packages.html" class="active">Packages</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="contact.html#enquiry" class="btn btn-small">Book Now</a>
+            </nav>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page banner -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Tour Packages</h1>
+            <p class="breadcrumb"><a href="index.html">Home</a> / Packages</p>
+        </div>
+    </section>
+
+    <!-- Packages -->
+    <section class="section">
+        <div class="container">
+            <div class="section-head">
+                <p class="eyebrow">All-inclusive trips</p>
+                <h2>Find your perfect package</h2>
+                <p>Every package includes stay, transfers and sightseeing.</p>
+            </div>
+
+            <input type="search" class="filter-search" id="filterSearch" placeholder="Search by place or package name..." aria-label="Search packages">
+
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="india">India</button>
+                <button class="filter-btn" data-filter="international">International</button>
+                <button class="filter-btn" data-filter="beach">Beach</button>
+                <button class="filter-btn" data-filter="mountains">Mountains</button>
+                <button class="filter-btn" data-filter="heritage">Heritage</button>
+                <button class="filter-btn" data-filter="honeymoon">Honeymoon</button>
+            </div>
+
+            <!-- Cards are built by script.js from data.js -->
+            <div class="package-grid" id="filterList" data-packages="all"></div>
+
+            <div class="empty-state" id="emptyState" hidden>
+                <h3>No packages found</h3>
+                <p>We don't have a ready package for this yet, but we can plan a custom trip for you.</p>
+                <a href="contact.html?package=Custom%20Trip#enquiry" class="btn">Request a Custom Trip</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <a href="index.html" class="logo">Safar<span>nama</span></a>
+                <p>Making every journey memorable since 2015.</p>
+            </div>
+            <div>
+                <h4>Company</h4>
+                <a href="about.html">About Us</a>
+                <a href="destinations.html">Destinations</a>
+                <a href="packages.html">Packages</a>
+                <a href="gallery.html">Gallery</a>
+            </div>
+            <div>
+                <h4>Support</h4>
+                <a href="contact.html">Contact Us</a>
+                <a href="contact.html#faq">FAQs</a>
+                <a href="contact.html#enquiry">Book a Trip</a>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <a href="tel:+919876543210">+91 98765 43210</a>
+                <a href="mailto:hello@safarnama.example">hello@safarnama.example</a>
+                <span>Jaipur, Rajasthan, India</span>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; <span id="year"></span> Safarnama. All rights reserved.</p>
+            <p class="footer-legal"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms &amp; Conditions</a></p>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

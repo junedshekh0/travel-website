@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations | Safarnama</title>
+    <meta name="description" content="Browse Safarnama's most loved destinations across India and abroad.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container nav">
+            <a href="index.html" class="logo">Safar<span>nama</span></a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="destinations.html" class="active">Destinations</a>
+                <a href="packages.html">Packages</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="contact.html#enquiry" class="btn btn-small">Book Now</a>
+            </nav>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page banner -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Destinations</h1>
+            <p class="breadcrumb"><a href="index.html">Home</a> / Destinations</p>
+        </div>
+    </section>
+
+    <!-- Destinations -->
+    <section class="section">
+        <div class="container">
+            <div class="section-head">
+                <p class="eyebrow">Where to next?</p>
+                <h2>Explore our destinations</h2>
+                <p>Pick a place to see the packages available for it.</p>
+            </div>
+
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="india">India</button>
+                <button class="filter-btn" data-filter="international">International</button>
+                <button class="filter-btn" data-filter="beach">Beach</button>
+                <button class="filter-btn" data-filter="mountains">Mountains</button>
+                <button class="filter-btn" data-filter="heritage">Heritage</button>
+            </div>
+
+            <div class="dest-grid" id="filterList">
+                <a href="packages.html?q=Goa" class="dest-card dest-goa" data-tags="india beach">
+                    <div class="dest-info"><h3>Goa</h3><p>Beaches &amp; nightlife</p></div>
+                    <span class="dest-price">from ₹8,999</span>
+                </a>
+                <a href="packages.html?q=Manali" class="dest-card dest-manali" data-tags="india mountains">
+                    <div class="dest-info"><h3>Manali</h3><p>Mountains &amp; snow</p></div>
+                    <span class="dest-price">from ₹10,499</span>
+                </a>
+                <a href="packages.html?q=Agra" class="dest-card dest-agra" data-tags="india heritage">
+                    <div class="dest-info"><h3>Agra</h3><p>Heritage &amp; history</p></div>
+                    <span class="dest-price">from ₹5,999</span>
+                </a>
+                <a href="packages.html?q=Jaipur" class="dest-card dest-jaipur" data-tags="india heritage">
+                    <div class="dest-info"><h3>Jaipur</h3><p>Forts &amp; palaces</p></div>
+                    <span class="dest-price">from ₹6,999</span>
+                </a>
+                <a href="packages.html?q=Kerala" class="dest-card pkg-kerala" data-tags="india beach">
+                    <div class="dest-info"><h3>Kerala</h3><p>Backwaters &amp; greenery</p></div>
+                    <span class="dest-price">from ₹18,499</span>
+                </a>
+                <a href="packages.html?q=Ladakh" class="dest-card pkg-ladakh" data-tags="india mountains">
+                    <div class="dest-info"><h3>Ladakh</h3><p>High passes &amp; lakes</p></div>
+                    <span class="dest-price">from ₹27,999</span>
+                </a>
+                <a href="packages.html?q=Paris" class="dest-card dest-paris" data-tags="international heritage">
+                    <div class="dest-info"><h3>Paris</h3><p>Romance &amp; art</p></div>
+                    <span class="dest-price">from ₹89,999</span>
+                </a>
+                <a href="packages.html?q=Bali" class="dest-card dest-bali" data-tags="international beach">
+                    <div class="dest-info"><h3>Bali</h3><p>Temples &amp; islands</p></div>
+                    <span class="dest-price">from ₹45,999</span>
+                </a>
+                <a href="packages.html?q=Dubai" class="dest-card dest-dubai" data-tags="international">
+                    <div class="dest-info"><h3>Dubai</h3><p>Luxury &amp; shopping</p></div>
+                    <span class="dest-price">from ₹52,999</span>
+                </a>
+                <a href="packages.html?q=Maldives" class="dest-card pkg-maldives" data-tags="international beach">
+                    <div class="dest-info"><h3>Maldives</h3><p>Water villas &amp; reefs</p></div>
+                    <span class="dest-price">from ₹64,999</span>
+                </a>
+                <a href="packages.html?q=Singapore" class="dest-card dest-singapore" data-tags="international">
+                    <div class="dest-info"><h3>Singapore</h3><p>City lights &amp; theme parks</p></div>
+                    <span class="dest-price">from ₹58,999</span>
+                </a>
+                <a href="packages.html?q=Thailand" class="dest-card dest-thailand" data-tags="international beach">
+                    <div class="dest-info"><h3>Thailand</h3><p>Islands &amp; street food</p></div>
+                    <span class="dest-price">from ₹38,999</span>
+                </a>
+            </div>
+
+            <div class="empty-state" id="emptyState" hidden>
+                <h3>No destinations found</h3>
+                <p>Try a different filter.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="container cta-inner">
+            <div>
+                <h2>Can't find your dream destination?</h2>
+                <p>Tell us where you want to go and we'll plan a custom trip for you.</p>
+            </div>
+            <div class="section-more" style="margin-top:0"><a href="contact.html#enquiry" class="btn btn-light">Plan My Trip</a></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <a href="index.html" class="logo">Safar<span>nama</span></a>
+                <p>Making every journey memorable since 2015.</p>
+            </div>
+            <div>
+                <h4>Company</h4>
+                <a href="about.html">About Us</a>
+                <a href="destinations.html">Destinations</a>
+                <a href="packages.html">Packages</a>
+                <a href="gallery.html">Gallery</a>
+            </div>
+            <div>
+                <h4>Support</h4>
+                <a href="contact.html">Contact Us</a>
+                <a href="contact.html#faq">FAQs</a>
+                <a href="contact.html#enquiry">Book a Trip</a>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <a href="tel:+919876543210">+91 98765 43210</a>
+                <a href="mailto:hello@safarnama.example">hello@safarnama.example</a>
+                <span>Jaipur, Rajasthan, India</span>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; <span id="year"></span> Safarnama. All rights reserved.</p>
+            <p class="footer-legal"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms &amp; Conditions</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
